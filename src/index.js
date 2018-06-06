@@ -1,10 +1,12 @@
 import * as _exArray from './core/array/index';
 
 function init (namespace) {
-  namespace = Object.assign(_exArray, namespace);
+  namespace.array = Object.assign(_exArray, namespace.array);
   return namespace;
 }
 
-const cs = init({});
+const cs = init({
+  array: {}
+});
 
 export default cs;
