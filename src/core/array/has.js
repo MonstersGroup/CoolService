@@ -9,7 +9,7 @@
 export default function (arr, value, isForce = false) {
   if (!Array.isArray(arr)) return false;
   const result = [];
-  arr.forEach( (item, index) => {
+  arr.forEach((item, index) => {
     const _tmp = {};
     if ((isForce && item === value) || (!isForce && item == value)) {
       _tmp.index = index;
